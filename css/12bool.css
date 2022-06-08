@@ -32,6 +32,23 @@
     flex-grow: 1;
 }
 
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.column > [class^="col"] {
+    flex-grow: 0;
+    flex-basis: auto;
+    flex-shrink: 0;
+}
+
+.column > .col {
+    max-width: 100%;
+    flex-grow: 1;
+}
+
+
 
 /*GRIGLIA IN 12 COLONNE*/
 .row > .col-12 {
@@ -92,4 +109,69 @@
     flex-basis: calc(100% / 12);
     max-width: calc(100% / 12);
 }
+
+.column > .col-1 {
+    flex-basis: calc(100% / 12);
+    max-width: calc(100% / 12);  
+}
+
+.column > .col-12 {
+    flex-basis: 100%;
+    max-width: 100%;
+}
+
+.column > .col-11 {
+    flex-basis: calc(100% / 12 * 11);
+    max-width: calc(100% / 12 * 11);
+}
+
+.column > .col-10 {
+    flex-basis: calc(100% / 12 * 10);
+    max-width: calc(100% / 12 * 10);
+}
+
+.column > .col-9 {
+    flex-basis: calc(100% / 12 * 9);
+    max-width: calc(100% / 12 * 9);
+}
+
+.column > .col-8 {
+    flex-basis: calc(100% / 12 * 8);
+    max-width: calc(100% / 12 * 8);
+}
+
+.column > .col-7 {
+    flex-basis: calc(100% / 12 * 7);
+    max-width: calc(100% / 12 * 7);
+}
+
+.column > .col-6 {
+    flex-basis: 50%;
+    max-width: 50%;
+}
+
+.column > .col-5 {
+    flex-basis: calc(100% / 12 * 5);
+    max-width: calc(100% / 12 * 5);
+}
+
+.column > .col-4 {
+    flex-basis: calc(100% / 12 * 4);
+    max-width: calc(100% / 12 * 4);
+}
+
+.column > .col-3 {
+    flex-basis: 25%;
+    max-width: 25%;
+}
+.column > .col-2 {
+    flex-basis: calc(100% / 12 * 2);
+    max-width: calc(100% / 12 * 2);
+}
+
+.column > .col-1 {
+    flex-basis: calc(100% / 12);
+    max-width: calc(100% / 12);
+}
+
 
