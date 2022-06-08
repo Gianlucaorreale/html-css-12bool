@@ -32,6 +32,7 @@
     flex-grow: 1;
 }
 
+
 /*GRIGLIA IN 12 COLONNE*/
 .row > .col-12 {
     flex-basis: 100%;
@@ -91,3 +92,4 @@
     flex-basis: calc(100% / 12);
     max-width: calc(100% / 12);
 }
+
